@@ -9,11 +9,7 @@ import { dbConnection } from "./database/dbConnection.js";
 dotenv.config({ path: "/Users/macbook/Desktop/sathish/MERN_STACK_RESTAURANT_RESERVATION/backend/.env" });
 
 const app = express();
-app.use(
-  cors({
-    origin: '*',
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
