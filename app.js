@@ -12,7 +12,7 @@ const app = express();
 
 // ✅ Apply full CORS config to all routes
 app.use(cors({
-  origin: 'http://localhost:5173',  // ✅ Your frontend
+  origin: 'https://zeesh-ten.vercel.app/',  // ✅ Your frontend
   credentials: true,               // ✅ Allows cookies, auth headers
 }));
 
